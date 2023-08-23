@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
-<body class="md:mx-[144px] mx-[36px] bg-background">
+<body class="xl:mx-[216px] mx-[36px] bg-background">
     {{-- Navbar --}}
     <nav class="flex justify-between items-center mt-6 mb-8">
         <a href="index.html">
@@ -28,18 +28,19 @@
     </nav>
 
     {{-- Hero section --}}
-    <section class=" h-[610px] bg-gradient-to-br from-lightBlue2 to-lightBlue flex flex-col justify-center align-center  rounded-[32px]">
-        <div class=" flex items-center justify-center gap-14">
-            <div>
-                <h1 class="text-[4rem] leading-[70px] font-semibold">
-                    Collaboration <br /> Sparks Ingenuity.   
+    <section class=" md:h-[610px] bg-gradient-to-br from-lightBlue2 to-lightBlue flex items-center justify-center rounded-[32px] md:p-10 p-6 ">
+
+        <div class=" flex md:flex-row flex-col-reverse justify-center items-center gap-14">
+            <div class="md:w-[40%]">
+                <h1 class="md:text-[4rem] text-[2.1rem] md:leading-[70px] leading-[48px] font-semibold ">
+                    Collaboration Sparks Ingenuity.   
                 </h1>
-                <p class="text-lg text-gray font-normal mt-4">
-                    Unleash Your Potential. Discover gigs, connect with top talent, <br/>and create together on our collaborative platform
+                <p class="md:text-lg text-base text-gray font-normal mt-4">
+                    Unleash Your Potential. Discover gigs, connect with top talent, and create together on our collaborative platform
                 </p>
-                <a href="register.html" class="inline-block bg-gradient-to-br from-blue to-purple text-white py-5 px-8 mt-6 rounded-xl text-lg font-medium leading-6">Sign up to list an Offer</a>
+                <a href="register.html" class="inline-block bg-gradient-to-br from-blue to-purple text-white md:py-5 py-4 md:px-8 px-6 mt-6 rounded-2xl md:text-lg text-sm md:font-medium font-normal leading-6">Sign up to list an Offer</a>
             </div>
-            <div>
+            <div class="">
                 <img src="images/hero-picture.png" alt="hero-picture">
             </div>
         </div>  
@@ -49,7 +50,7 @@
     <section class="my-40">
         <div class="flex flex-col justify-center items-center">
             <p class="text-2xl font-normal text-gray mb-8">Trusted by</p>
-            <ul class="flex gap-16 opacity-50">
+            <ul class="flex md:flex-row flex-col items-center gap-16 opacity-50">
                 <li><img src="images/partners-logos/orange-logo.png" alt="Orange Logo"></li>
                 <li><img src="images/partners-logos/logoipsum-logo.png" alt="Logoipsum Logo"></li>
                 <li><img src="images/partners-logos/apex-innovate-logo.png" alt="Apex Innovate Logo"></li>
@@ -76,9 +77,9 @@
     <footer class="flex flex-col gap-8 w-full items-center justify-center mb-20">
         <hr class="w-full text-lightGray">
         <div class="flex items-center justify-between w-[92%]">
-            <img src="images/colab-logo.png" alt="colab-logo" class="w-20">
-            <p class="text-gray text-xs font-light">Copyright &copy; 2023, All rights reserved</p>
-            <a href="create.html" class="bg-gradient-to-br from-blue to-purple text-white font-normal text-sm py-3 px-6 rounded-2xl">Post Offer</a>
+            <img src="images/colab-logo.png" alt="colab-logo" class="md:w-20 w-14">
+            <p class="text-gray md:text-xs text-[8px] font-light">Copyright &copy; 2023, All rights reserved</p>
+            <a href="create.html" class="bg-gradient-to-br from-blue to-purple text-white font-normal md:text-sm text-[10px] md:py-3 py-[6px] md:px-6 px-[18px] md:rounded-2xl rounded-[10px]">Post Offer</a>
         </div>
     </footer>
 </body>
