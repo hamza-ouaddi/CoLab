@@ -1,6 +1,5 @@
-@extends('layout')
-    
-@section('content')
+
+<x-layout>
 
 {{-- Search bar --}}
 @include('partials._searchBar')
@@ -63,5 +62,5 @@
     </div>
 </div>    
 
-@endsection
+</x-layout>
     
