@@ -10,17 +10,11 @@
                 <a href="/listings/{{$listing->id}}">{{$listing->title}}</a>
             </h3>
             <div class="md:text-2xl text-sm text-background font-light md:leading-[34px] leading-6 md:mb-[14px] mb-2">{{$listing->company}} </div>
-            <ul class="flex mb-[7px] md:gap-4 gap-[10px]">
-                <li class="flex items justify-center bg-white text-black rounded-2xl py-0.5 px-4 font-normal md:text-sm text-[0.5rem]">
-                    <a href="#">Laravel</a>
-                </li>
-                <li class="flex items justify-center bg-white text-black rounded-2xl py-0.5 px-4 font-normal md:text-sm text-[0.5rem]">
-                    <a href="#">RESTful</a>
-                </li>
-                <li class="flex items justify-center bg-white text-black rounded-2xl py-0.5 px-4 font-normal md:text-sm text-[0.5rem]">
-                    <a href="#">Vue</a>
-                </li>
+            
+            <ul  class="flex mb-[7px] md:gap-4 gap-[10px]">
+                    <x-listing-tags :tags-csv="$listing->tags" class="flex items justify-center bg-white text-black rounded-2xl py-0.5 px-4 font-normal md:text-sm text-[0.5rem]"/>
             </ul>
+            
             <div class=" text-background md:text-base text-[10px] mt-2 font-light leading-8">
                 <i class="fa-solid fa-location-dot mr-2"></i>{{$listing->location}}
             </div>
