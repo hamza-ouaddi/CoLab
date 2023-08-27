@@ -30,7 +30,7 @@
     <main>
 
     {{-- VIEW OUTPUT --}}
-    @yield('content')
+    {{$slot}}
 
     </main>
     <footer class="flex flex-col gap-8 w-full items-center justify-center mb-20">
