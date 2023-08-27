@@ -42,23 +42,12 @@
 
         {{-- Offer info --}}
             <div class="w-full">
-                <h3 class="md:text-[40px] text-[32px] text-gray font-semibold lg:leading-10 leading-9 mb-4">{{$listing->title}} </h3>    
+                <h3 class="md:text-[40px] text-[32px] text-gray font-semibold lg:leading-10 leading-9 mb-4">{{$listing->title}} </h3>   
+
                 <ul class="flex gap-4 mb-8">
-                    <li
-                        class="flex items justify-center bg-gray text-white rounded-2xl py-0.5 px-4 font-normal md:text-lg text-[14px]"
-                    >
-                        <a href="#">Laravel</a>
-                    </li>
-                    <li
-                        class="flex items justify-center bg-gray text-white rounded-2xl py-0.5 px-4 font-normal md:text-lg text-[14px]"
-                    >
-                        <a href="#">API</a>
-                    </li>
-                    <li
-                        class="flex items justify-center bg-gray text-white rounded-2xl py-0.5 px-4 font-normal md:text-lg text-[14px]"
-                    >
-                        <a href="#">Backend</a>
-                    </li>
+                   
+                        <x-listing-tags :tags-csv="$listing->tags" class="flex items justify-center bg-gray text-white rounded-2xl py-0.5 px-4 font-normal md:text-lg text-[14px]"/>
+                    
                 </ul>
                 
                 <div>
