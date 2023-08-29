@@ -1,4 +1,4 @@
-<form action="">
+<form action="/">
     <div class="relative rounded-2xl py-[6px] mb-16">
         <div class="absolute top-6 left-3 "><i class="fa-solid fa-magnifying-glass text-lightGray z-20"></i></div>
         <input type="text" name="search" placeholder="Search for offers..." class="h-[60px] w-full pl-10 pr-20 rounded-xl focus:shadow focus:outline-none">
