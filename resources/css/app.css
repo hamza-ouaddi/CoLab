@@ -20,6 +20,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+input:focus{
+outline: 2px solid var(--purple);
+}
 
 /* File input */
 .file-upload-container {
@@ -68,3 +71,7 @@ input[type="file"]::file-selector-button {
     padding: 5px 14px;
     }
 }
+
+textarea {
+  resize: none;
+} 
