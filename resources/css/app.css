@@ -2,6 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --black: #111111;
+    --gray: #434343;
+    --lightGray: #BFBFBF;
+    --darkBlue: #1A1747;
+    --purple: #795FFC;
+    --blue: #2B4EFF;
+    --lightPurple:#E4DFFE;
+    --lightBlue: #D4DBFF;
+    --lightBlue2: #E5E9F5;
+    --background: #F1F3F6;
+    --white: #FFFFFF;
+}
+
 *{
     font-family: 'Poppins', sans-serif;
+}
+
+
+/* File input */
+.file-upload-container {
+    position: relative;
+    display: inline-block;
+}
+
+.file-input {
+    width: 100%;
+    padding: 20px 16px;
+    border-radius: 16px;
+    background: white;
+    border: none;
+    border-radius: 16px;
+}
+
+@media only screen and (max-width: 640px) {
+    .file-input {
+        border-radius: 8px;
+        padding: 12px 16px;
+    }
+}
+
+input[type="file"]::file-selector-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, var(--blue), var(--purple));
+    color: white;
+    cursor: pointer;
+    padding: 14px 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 14px;
+}
+
+@media only screen and (max-width: 640px) {
+    input[type="file"]::file-selector-button {
+    margin: 6px 8px;
+    border-radius: 8px;
+    padding: 5px 14px;
+    }
 }
