@@ -5,7 +5,7 @@
             <p class="lg:text-2xl text-lg font-light leading-[34px]">Post a gig to find a developer</p>
         </header>
 
-        <form method="POST" action="/listings" class="flex flex-col lg:gap-[48px] gap-5">
+        <form method="POST" action="/listings" class="flex flex-col lg:gap-[32px] gap-5">
             @csrf
             <div>
                 <label for="company" class="lg:text-xl text-lg font-light leading-[34px]">Company Name</label>
