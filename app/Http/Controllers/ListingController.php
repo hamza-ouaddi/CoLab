@@ -35,7 +35,7 @@ class ListingController extends Controller
 
         Listing::create($formInputs);
 
-        return redirect('/');
+        return redirect('/')->with('message', 'Listing created successfully.');
     }
 
     //Show single listing
