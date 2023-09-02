@@ -75,3 +75,25 @@ input[type="file"]::file-selector-button {
 textarea {
   resize: none;
 } 
+
+
+/* Flash message animation */
+.animated-flash {
+    position: fixed;
+    top: -80px; /* Start off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideIn 0.5s forwards, slideOut 0.5s 3s forwards; /* Adjust animation duration as needed */
+}
+
+@keyframes slideIn {
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideOut {
+    to {
+        top: -80px; /* Move off-screen again */
+    }
+}
