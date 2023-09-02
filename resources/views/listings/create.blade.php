@@ -13,6 +13,7 @@
                     type="text"
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="company"
+                    value="{{old('company')}}"
                 />
 
                 @error('company')
@@ -27,6 +28,7 @@
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="title"
                     placeholder="Example: Senior Front-end Developer"
+                    value="{{old('title')}}"
                 />
 
                 @error('title')
@@ -41,6 +43,7 @@
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="location"
                     placeholder="Example: Remote,US or Cologne, DE...etc"
+                    value="{{old('location')}}"
                 />
 
                 @error('location')
@@ -54,6 +57,7 @@
                     type="text"
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="email"
+                    value="{{old('email')}}"
                 />
 
                 @error('email')
@@ -67,6 +71,7 @@
                     type="text"
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="website"
+                    value="{{old('website')}}"
                 />
 
                 @error('website')
@@ -81,6 +86,7 @@
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="tags"
                     placeholder="Example: React, Developer, Branding...etc"
+                    value="{{old('tags')}}"
                 />
 
                 @error('tags')
@@ -102,7 +108,7 @@
                     name="description"
                      rows="10"
                     placeholder="Include company introduction, offer tasks, requirements, sallary...etc"
-                ></textarea>
+                >{{old('description')}}</textarea>
 
                 @error('description')
                     <p class="text-red-500 text-sm mt-2">{{$message}}</p>
