@@ -13,7 +13,7 @@
         {{-- Company info --}}
             <div class="flex flex-col items-center text-center">
                 <div class="flex-none bg-white rounded-xl p-10 md:w-48 w-32 md:h-48 h-32 flex items-center flex-shrink-0 mb-7">
-                    <img src="{{ asset('images/companies-logos/neuidee-logo.png') }}" alt="company-logo" />
+                    <img src="{{ $listing->logo? asset('storage/' . $listing->logo) : asset('/images/no-image.png') }}" alt="company-logo" />
                 </div>
                 <div class="text-[40px] text-gray leading-[44px] mb-[18px]">{{$listing->company}}</div>
                 <div class="text-2xl text-gray mb-8">

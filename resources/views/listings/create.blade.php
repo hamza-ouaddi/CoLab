@@ -5,7 +5,7 @@
             <p class="lg:text-2xl text-lg font-light leading-[34px]">Post a gig to find a developer</p>
         </header>
 
-        <form method="POST" action="/listings" class="flex flex-col lg:gap-[32px] gap-5">
+        <form method="POST" action="/listings" enctype="multipart/form-data" class="flex flex-col lg:gap-[32px] gap-5">
             @csrf
             <div>
                 <label for="company" class="lg:text-xl text-lg font-light leading-[34px]">Company Name</label>
@@ -94,12 +94,21 @@
                 @enderror
             </div>
 
-            {{-- <div class="flex flex-col">
+            <div class="flex flex-col">
                 <label for="logo" class="lg:text-xl text-lg font-light leading-[34px]">Company Logo</label>
                 <div class="file-upload-container mt-4">
-                    <input type="file" class="file-input" id="fileInput" class="lg:mt-4 mt-[6px] lg:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full" name="logo">
+                    <input 
+                        type="file" 
+                        class="file-input" 
+                        id="fileInput" 
+                        class="lg:mt-4 mt-[6px] lg:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full" 
+                        name="logo"
+                    >
                 </div>
-            </div> --}}
+                @error('logo')
+                    <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                @enderror
+            </div>
 
             <div>
                 <label for="description" class="lg:text-xl text-lg font-light leading-[34px]">Job Description</label>
