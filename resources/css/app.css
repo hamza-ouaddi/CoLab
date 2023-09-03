@@ -80,10 +80,10 @@ textarea {
 /* Flash message animation */
 .animated-flash {
     position: fixed;
-    top: -80px; /* Start off-screen */
+    top: -80px; 
     left: 50%;
     transform: translateX(-50%);
-    animation: slideIn 0.5s forwards, slideOut 0.5s 3s forwards; /* Adjust animation duration as needed */
+    animation: slideIn 0.5s forwards, slideOut 0.5s 3s forwards; 
 }
 
 @keyframes slideIn {
@@ -94,6 +94,6 @@ textarea {
 
 @keyframes slideOut {
     to {
-        top: -80px; /* Move off-screen again */
+        top: -80px;
     }
 }
