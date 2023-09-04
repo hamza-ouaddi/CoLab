@@ -4,9 +4,16 @@
 {{-- Search bar --}}
 @include('partials._searchBar')
 
-<a href="/" class="flex items-center text-black text-lg mb-6">
-    <i class="fa-solid fa-arrow-left mr-2"></i> Back
-</a>
+<div class="flex gap-8">
+    <a href="/" class="flex items-center text-black text-lg mb-6">
+        <i class="fa-solid fa-arrow-left mr-2"></i> Back
+    </a>
+
+    <a href="/listings/{{$listing->id}}/edit" class="flex items-center text-black text-lg mb-6">
+        <i class="fa-solid fa-pen mr-2"></i> Edit
+    </a>
+</div>
+
 <div>
     <div class="bg-gradient-to-br from-lightBlue2 to-lightBlue mb-[88px] lg:py-14 pt-[82px] pb-8 lg:px-32 px-8 rounded-[32px]">
         <div class="flex lg:flex-row flex-col">
