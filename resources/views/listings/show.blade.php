@@ -4,14 +4,22 @@
 {{-- Search bar --}}
 @include('partials._searchBar')
 
-<div class="flex gap-8">
-    <a href="/" class="flex items-center text-black text-lg mb-6">
+<div class="flex justify-between mb-6">
+    <a href="/" class="flex items-center text-black text-lg">
         <i class="fa-solid fa-arrow-left mr-2"></i> Back
     </a>
 
-    <a href="/listings/{{$listing->id}}/edit" class="flex items-center text-black text-lg mb-6">
-        <i class="fa-solid fa-pen mr-2"></i> Edit
-    </a>
+    <div class="flex gap-8 mr-2">
+        <a href="/listings/{{$listing->id}}/edit" class="flex items-center text-black text-lg">
+            <i class="fa-solid fa-pen mr-2"></i> Edit
+        </a>
+
+        <form method="POST" action="/listings/{{$listing->id}}" class="flex items-center text-black text-lg">
+            @csrf
+            @method('DELETE')
+            <button><i class="fa-solid fa-trash mr-2"></i> Delete</button>
+        </form>
+    </div>
 </div>
 
 <div>
