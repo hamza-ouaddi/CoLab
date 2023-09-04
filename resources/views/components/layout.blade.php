@@ -22,12 +22,29 @@
             <img src="{{ asset('images/colab-logo.png') }}" alt="logo" >
         </a>
         <ul class="flex items-center">
-            <li class="px-8 py-5">
-                <a href="login.html" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-sm font-normal"> Login</a>
-            </li>
-            <li>
-                <a href="/register" class="bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px]">Register</a>
-            </li> 
+
+            @auth
+                <li class="px-8 py-5">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-xl font-normal">Welcome, {{auth()->user()->name}}!</span>
+                </li>
+                <li>
+                    <a href="/listings/manage" class="flex items-center px-8 py-5 rounded-2xl text-gray text-base font-normal leading-[18px]"><i class="fa-solid fa-gear mr-2"></i> Manage Offers</a>
+                </li> 
+                <li>
+                    <form method="POST" action="/logout">
+                        @csrf
+                        <button type="submit" class="flex items-center bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-base font-normal leading-[18px]"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i> Logout</button>
+                    </form>
+                </li> 
+            @else
+                <li class="px-8 py-5">
+                    <a href="login.html" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-sm font-normal"> Login</a>
+                </li>
+                <li>
+                    <a href="/register" class="bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px]">Register</a>
+                </li> 
+            @endauth
+            
         </ul>
     </nav>
 
