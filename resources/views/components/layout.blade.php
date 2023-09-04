@@ -12,7 +12,7 @@
     @vite('resources/css/app.css')
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="xl:mx-[216px] mx-[36px] bg-background">
+<body class="2xl:mx-[216px] mx-[36px] bg-background">
     
     <x-flash-message />
 
@@ -26,7 +26,7 @@
                 <a href="login.html" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-sm font-normal"> Login</a>
             </li>
             <li>
-                <a href="register.html" class="bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px]">Register</a>
+                <a href="/register" class="bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px]">Register</a>
             </li> 
         </ul>
     </nav>
