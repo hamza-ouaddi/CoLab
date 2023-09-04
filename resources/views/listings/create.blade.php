@@ -1,8 +1,8 @@
 <x-layout>
     <div class="bg-gradient-to-br from-lightBlue2 to-lightBlue mb-[88px] md:py-16 py-8 md:px-20 px-8 2xl:mx-[320px] xl:mx-[160px] lg:mx-40 lg:rounded-[32px] rounded-2xl">
         <header class="text-center lg:mb-16 mb-8">
-            <h2 class="lg:text-[32px] text-2xl font-semibold leading-[34px] uppercase lg:mb-[18px] mb-2">Create a Gig</h2>
-            <p class="lg:text-2xl text-lg font-light leading-[34px]">Post a gig to find a developer</p>
+            <h2 class="lg:text-[32px] text-2xl font-semibold leading-[34px] uppercase lg:mb-[18px] mb-2">Create an Offer</h2>
+            <p class="lg:text-2xl text-lg font-light leading-[34px]">Post an offer to collaborate</p>
         </header>
 
         <form method="POST" action="/listings" enctype="multipart/form-data" class="flex flex-col lg:gap-[32px] gap-5">
