@@ -24,9 +24,9 @@
         <ul class="flex items-center">
 
             @auth
-                <li class="px-8 py-5">
+                {{-- <li class="px-8 py-5">
                     <span class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-xl font-normal">Welcome, {{auth()->user()->name}}!</span>
-                </li>
+                </li> --}}
                 <li>
                     <a href="/listings/manage" class="flex items-center px-8 py-5 rounded-2xl text-gray text-sm font-normal leading-[18px]"><i class="fa-solid fa-gear mr-2"></i> Manage Offers</a>
                 </li> 

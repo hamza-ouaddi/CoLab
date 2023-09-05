@@ -8,18 +8,6 @@
     <a href="/" class="flex items-center text-black text-lg">
         <i class="fa-solid fa-arrow-left mr-2"></i> Back
     </a>
-
-    <div class="flex gap-8 mr-2">
-        <a href="/listings/{{$listing->id}}/edit" class="flex items-center text-black text-lg">
-            <i class="fa-solid fa-pen mr-2"></i> Edit
-        </a>
-
-        <form method="POST" action="/listings/{{$listing->id}}" class="flex items-center text-black text-lg">
-            @csrf
-            @method('DELETE')
-            <button><i class="fa-solid fa-trash mr-2"></i> Delete</button>
-        </form>
-    </div>
 </div>
 
 <div>
