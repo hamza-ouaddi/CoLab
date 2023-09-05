@@ -37,6 +37,8 @@ class ListingController extends Controller
             $formInputs['logo'] = $request->file('logo')->store('logos', 'public');
         }
 
+        $formInputs['user_id'] = auth()->id();
+
         Listing::create($formInputs);
 
         return redirect('/')->with('message', 'Listing created successfully.');
