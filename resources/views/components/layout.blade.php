@@ -59,7 +59,7 @@
         <div class="flex items-center justify-between w-[92%]">
             <img src="{{ asset('images/colab-logo.png') }}" alt="colab-logo" class="md:w-20 w-14">
             <p class="text-gray md:text-xs text-[8px] font-light">Copyright &copy; 2023, All rights reserved</p>
-            <a href="create.html" class="bg-gradient-to-br from-blue to-purple text-white font-normal md:text-sm text-[10px] md:py-3 py-[6px] md:px-6 px-[18px] md:rounded-2xl rounded-[10px]">Post Offer</a>
+            <a href="/listings/create" class="bg-gradient-to-br from-blue to-purple text-white font-normal md:text-sm text-[10px] md:py-3 py-[6px] md:px-6 px-[18px] md:rounded-2xl rounded-[10px]">Post Offer</a>
         </div>
     </footer>
 </body>
