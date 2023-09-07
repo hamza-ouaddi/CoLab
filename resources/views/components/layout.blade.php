@@ -12,7 +12,7 @@
     @vite('resources/css/app.css')
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="2xl:mx-[216px] mx-[36px] bg-background">
+<body class="2xl:mx-[216px] mx-[36px] bg-background" x-data="{ isOpen: false }">
     
     <x-flash-message />
 
@@ -21,14 +21,17 @@
         <a href="/">
             <img src="{{ asset('images/colab-logo.png') }}" alt="logo" >
         </a>
-        <ul class="flex items-center">
+        <ul class="sm:flex hidden items-center gap-6">
 
             @auth
-                {{-- <li class="px-8 py-5">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-xl font-normal">Welcome, {{auth()->user()->name}}!</span>
-                </li> --}}
+                <li class="  rounded-2xl" >
+                    <span class="text-gray text-sm  font-normal">Welcome, {{auth()->user()->name}}!</span>
+                </li>
+                <li class="py-1">
+                    <a href="/listings/create" class="flex items-center  rounded-2xl text-gray text-sm  font-normal leading-[18px]"><i class="fa-solid fa-plus mr-2"></i> Create Offer</a>
+                </li>
                 <li>
-                    <a href="/listings/manage" class="flex items-center px-8 py-5 rounded-2xl text-gray text-sm font-normal leading-[18px]"><i class="fa-solid fa-gear mr-2"></i> Manage Offers</a>
+                    <a href="/listings/manage" class="flex items-center rounded-2xl text-gray text-sm font-normal leading-[18px]"><i class="fa-solid fa-gear mr-2"></i> Manage Offers</a>
                 </li> 
                 <li>
                     <form method="POST" action="/logout">
@@ -45,6 +48,41 @@
                 </li> 
             @endauth
             
+        </ul>
+
+        <button id="mobile-navbar-toggle " class="sm:hidden block px-4 py-2 text-3xl text-gray" @click="isOpen = !isOpen">
+            <i id="menu-icon" class="fa-solid" :class="{ 'fa-bars': !isOpen, 'fa-times': isOpen }"></i>
+        </button>
+
+        <ul id="mobile-navbar" class="sm:hidden flex flex-col gap-6 justify-center items-start bg-white px-4 py-4 mt-2 absolute top-16 right-12 rounded-2xl shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] z-20" :class="{ 'show': isOpen }"
+        x-show="isOpen"
+        @click.away="isOpen = false" >
+
+            @auth
+                <li class="bg-gradient-to-br from-lightBlue to-lightBlue2 p-4 rounded-lg w-full" >
+                    <span class="text-gray text-lg  font-normal">Welcome, <br>{{auth()->user()->name}}!</span>
+                </li>
+                <li class="py-1">
+                    <a href="/listings/create" class="flex items-center rounded-2xl text-gray  font-normal leading-[18px]"><i class="fa-solid fa-plus mr-2"></i> Create Offer</a>
+                </li>
+                <li class="py-1">
+                    <a href="/listings/manage" class="flex items-center rounded-2xl text-gray  font-normal leading-[18px]"><i class="fa-solid fa-gear mr-2"></i> Manage Offers</a>
+                </li> 
+                <li class="w-full">
+                    <form method="POST" action="/logout">
+                        @csrf
+                        <button type="submit" class="flex items-center bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px] w-full"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i> Logout</button>
+                    </form>
+                </li> 
+            @else
+                <li class="flex items-center w-full py-1">
+                    <a href="/login" class="w-full text-center text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple font-normal leading-[18px]"> Login</a>
+                </li>
+                <li>
+                    <a href="/register" class="flex items-center bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px] w-full">Register</a>
+                </li> 
+            @endauth
+
         </ul>
     </nav>
 
