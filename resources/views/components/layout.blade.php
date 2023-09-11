@@ -36,7 +36,7 @@
                 <li>
                     <form method="POST" action="/logout">
                         @csrf
-                        <button type="submit" class="flex items-center bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px]"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i> Logout</button>
+                        <button type="submit" class="flex items-center bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px] hover:shadow-lg hover:shadow-blue/50 duration-500 ease-in-out"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i> Logout</button>
                     </form>
                 </li> 
             @else
