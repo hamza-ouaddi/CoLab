@@ -131,8 +131,8 @@
             </div>
 
             <div class="lg:block flex justify-center items-center">
-                <button class="bg-gradient-to-br from-blue to-purple text-white lg:rounded-2xl rounded-lg lg:py-4 py-3 lg:px-8 px-6 font-normal lg:text-lg text-sm">Update Offer</button>
-                <a href="/" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple rounded-2xl lg:py-4 py-3 lg:px-8 px-6 font-normal lg:text-lg text-sm"> Back </a>
+                <button class="bg-gradient-to-br from-blue to-purple text-white lg:rounded-2xl rounded-lg lg:py-4 py-3 lg:px-8 px-6 font-normal lg:text-lg text-sm hover:shadow-lg hover:shadow-blue/50 duration-500 ease-in-out">Update Offer</button>
+                <a href="/" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple rounded-2xl lg:ml-8 ml-6 font-normal lg:text-lg text-sm"> Back </a>
             </div>
         </form>
     </div>

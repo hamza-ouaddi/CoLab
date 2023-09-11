@@ -41,10 +41,10 @@
                 </li> 
             @else
                 <li class="px-8 py-5">
-                    <a href="/login" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-sm font-normal"> Login</a>
+                    <a href="/login" class="text-transparent bg-clip-text bg-gradient-to-br from-blue to-purple text-sm font-normal "> Login</a>
                 </li>
                 <li>
-                    <a href="/register" class="bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px]">Register</a>
+                    <a href="/register" class="bg-gradient-to-br from-blue to-purple px-8 py-5 rounded-2xl text-white text-sm font-normal leading-[18px] hover:shadow-lg hover:shadow-blue/50 duration-500 ease-in-out">Register</a>
                 </li> 
             @endauth
             
@@ -97,7 +97,7 @@
         <div class="flex items-center justify-between w-[92%]">
             <img src="{{ asset('images/colab-logo.png') }}" alt="colab-logo" class="md:w-20 w-14">
             <p class="text-gray md:text-xs text-[8px] font-light">Copyright &copy; 2023, All rights reserved</p>
-            <a href="/listings/create" class="bg-gradient-to-br from-blue to-purple text-white font-normal md:text-sm text-[10px] md:py-3 py-[6px] md:px-6 px-[18px] md:rounded-2xl rounded-[10px]">Post Offer</a>
+            <a href="/listings/create" class="bg-gradient-to-br from-blue to-purple text-white font-normal md:text-sm text-[10px] md:py-3 py-[6px] md:px-6 px-[18px] md:rounded-2xl rounded-[10px] hover:shadow-md hover:shadow-blue/50 duration-500 ease-in-out">Post Offer</a>
         </div>
     </footer>
 </body>
