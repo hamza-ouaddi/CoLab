@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="mb-7">
-                    <button type="submit" class="bg-gradient-to-br from-blue to-purple text-white rounded-xl py-4 px-4 font-normal text-lg w-full">Sign Up</button>
+                    <button type="submit" class="bg-gradient-to-br from-blue to-purple text-white rounded-xl py-4 px-4 font-normal text-lg w-full hover:shadow-lg hover:shadow-blue/50 duration-500 ease-in-out">Sign Up</button>
                 </div>
 
                 <div class="">
