@@ -16,6 +16,7 @@
                         class="rounded-xl py-4 px-4 w-full"
                         name="email"
                         value="{{old('email')}}"
+                        autocomplete="off"
                     />
                     
                     @error('email')

@@ -15,6 +15,7 @@
                         class="rounded-xl py-4 px-4 w-full"
                         name="name"
                         value="{{old('name')}}"
+                        autocomplete="off"
                     />
 
                     @error('name')
@@ -31,6 +32,7 @@
                         class="rounded-xl py-4 px-4 w-full"
                         name="email"
                         value="{{old('email')}}"
+                        autocomplete="off"
                     />
                     
                     @error('email')
