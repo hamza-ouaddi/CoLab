@@ -58,7 +58,7 @@ class ListingController extends Controller
     public function update(Request $request, Listing $listing){
 
         //Check if user is owner or not
-        if($listing->user_id != auth()->id){
+        if($listing->user_id != auth()->id()){
             abort(403, 'Unauthorized Action');
         }
 
@@ -85,7 +85,7 @@ class ListingController extends Controller
     public function destroy(Listing $listing){
 
         //Check if user is owner or not
-        if($listing->user_id != auth()->id){
+        if($listing->user_id != auth()->id()){
             abort(403, 'Unauthorized Action');
         }
 

@@ -58,7 +58,6 @@
                     class="lg:mt-4 mt-[6px] sm:rounded-2xl rounded-lg lg:py-5 py-3 px-4 w-full"
                     name="email"
                     value="{{old('email')}}"
-                    autocomplete="off"
                 />
 
                 @error('email')
