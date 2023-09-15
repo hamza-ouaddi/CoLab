@@ -1,6 +1,15 @@
 
 ![Logo Color](https://github.com/hamza-ouaddi/CoLab/assets/80076862/307edddf-31bc-493f-98a0-d4e5515ea06f)
 
+## About the project
+<p>CoLab, a web application using PHP Laravel. CoLab allows users to register, log into their accounts, and easily manage their job offers and gig listings with create, edit, and delete them. It simplifies the process of connecting job seekers and employers for collaborations.</p>
+
+## Video of the project
+[![Watch the video](https://i.imgur.com/ErlSkCL.png)](https://youtu.be/4hFNbacaO9A)
+
+Video link: https://youtu.be/4hFNbacaO9A
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
